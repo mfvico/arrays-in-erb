@@ -7,11 +7,13 @@
 
 <h1>States, their capitols, and another city</h1>
 
-<% states_cities.each do |statecity| %>
+<% states_cities.each do |state, cities| %>
   <ul>
-    <li><%=statecity[0]%></li>
+    <li><%=state%></li>
     <ul>
-      <li> <%=statecity[1]%></li>
+      <% cities.each do |city|%>
+      <li> <%=city%></li>
+      <%end%>
     </ul>
   </ul>
 <%end%>

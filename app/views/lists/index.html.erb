@@ -1,7 +1,16 @@
+<% states = ["New York", "Connecticut", "Maine", "Colorado"] %>
+<% cities = ["New York City", "Albany", "Hartford", "Bridgeport", "Augusta", "Bangor", "Denver", "Boulder"]%>
 <h2>States</h2>
-
-<p>Put your code here...</p>
+<% states.each do |state|%>
+  <ul>
+    <li><%=state%></li>
+  </ul>
+<%end%>
 
 <h2>Cities</h2>
-
-<p>Put your code here...</p>
+<% cities.each do |city|%>
+  <ul>
+    <li><%=city%></li>
+  </ul>
+<%end %>
+<%= link_to "Stretch", stretch_path %>

@@ -1,0 +1,17 @@
+<% states_cities = [
+  ["New York", ["Albany", "New York City", "Syracuse"]],
+  ["Connecticut", ["Hartford", "Bridgeport", "New Haven", "Stamford"]],
+  ["Maine", ["Augusta", "Portland", "Bangor"]],
+  ["Colorado", ["Denver", "Boulder"]]
+] %>
+
+<h1>States, their capitols, and another city</h1>
+
+<% states_cities.each do |statecity| %>
+  <ul>
+    <li><%=statecity[0]%></li>
+    <ul>
+      <li> <%=statecity[1]%></li>
+    </ul>
+  </ul>
+<%end%>
